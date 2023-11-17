@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "sort.h"
 /**
  * bubble_sort - sorts an array of intergers in
