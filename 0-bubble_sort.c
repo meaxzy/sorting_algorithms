@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include "sort.h"
 /**
- * bubble_sort - sorts an array of intergers in ascending order using Bubble Sort
+ * bubble_sort - sorts an array of intergers in
+ * ascending order using Bubble Sort
  * @array: The array to be sorted
  * @size: Size of the array
  * Return: void
@@ -35,7 +36,7 @@ void bubble_sort(int *array, size_t size)
 					}
 				}
 				printf("\n");
-				
+
 				/* Set the flag to indicate a swap was made */
 				flag = 1;
 			}
