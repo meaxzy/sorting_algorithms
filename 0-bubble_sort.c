@@ -3,6 +3,18 @@
 #include "sort.h"
 
 /**
+ * swap - function that sways the positions of 2 integers
+ * @first_int: pointer to the first integer
+ * @second_int: pointer to the 2nd integer
+ */
+void swap(int *first_int, int *second_int)
+{
+	int temp = *first_int;
+	*first_int = *second_int;
+	*second_int = temp;
+}
+
+/**
  * bubble_sort - sorts an array of intergers in
  * ascending order using Bubble Sort
  * @array: The array to be sorted
@@ -16,7 +28,7 @@ void bubble_sort(int *array, size_t size)
         int temp;
         int flag;
 	
-	if (array == NULL || size == 0)
+	if (array == NULL || size <= 1)
 	{
 		return;
 	}
@@ -33,16 +45,8 @@ void bubble_sort(int *array, size_t size)
 				temp = array[j];
 				array[j] = array[j + 1];
 				array[j + 1] = temp;
-				/* Print array after each swap
-				for (k = 0; k < size; k++)
-				{
-					printf("%d", array[k]);
-					if (k != size - 1)
-					{
-						printf(", ");
-					}
-				}
-				printf("\n"); */
+				swap(&array[j], &array[j + 1]);
+				print_array(array, size);
 
 				/* Set the flag to indicate a swap was made */
 				flag = 1;
