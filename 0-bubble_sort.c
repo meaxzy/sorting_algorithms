@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
+
 #include "sort.h"
 
 /**
@@ -7,6 +6,7 @@
  * ascending order using Bubble Sort
  * @array: The array to be sorted
  * @size: Size of the array
+ *
  * Return: void
  */
 
